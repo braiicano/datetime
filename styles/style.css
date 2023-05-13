@@ -1,0 +1,47 @@
+:root {
+  --normal-size: 16px;
+}
+* {
+  box-sizing: content-box;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  color: #fff;
+}
+body {
+  background-color: #252525;
+  font-size: var(--normal-size);
+  text-align: center;
+}
+#clock {
+  margin: auto;
+  padding: 10em 0;
+}
+.c-hour {
+  font-size: 10em;
+}
+.c-minute {
+  font-size: 10em;
+}
+.c-minute::before,
+.c-second::before {
+  font-size: 1em;
+  content: ":";
+  animation-duration: 1.3s;
+  animation-timing-function: ease-in-out;
+  animation-name: blink;
+  animation-iteration-count: infinite;
+}
+.c-second {
+  font-size: 6em;
+}
+.c-date {
+  font-size: 2em;
+}
+@keyframes blink {
+  0%,
+  50% {
+    color: #252525;
+  }
+  100% {
+    color: #fff;
+  }
+}
