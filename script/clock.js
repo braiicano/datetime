@@ -22,29 +22,29 @@ const T = (D = new Date()) => {
   function Month(n) {
     let m;
     return (m =
-      n == 1
+      n == 0
         ? "enero"
-        : n == 2
+        : n == 1
         ? "febrero"
-        : n == 3
+        : n == 2
         ? "marzo"
-        : n == 4
+        : n == 3
         ? "abril"
-        : n == 5
+        : n == 4
         ? "mayo"
-        : n == 6
+        : n == 5
         ? "junio"
-        : n == 7
+        : n == 6
         ? "julio"
-        : n == 8
+        : n == 7
         ? "agosto"
-        : n == 9
+        : n == 8
         ? "septiembre"
-        : n == 10
+        : n == 9
         ? "octubre"
-        : n == 11
+        : n == 10
         ? "noviembre"
-        : n == 12
+        : n == 11
         ? "diciembre"
         : "Err");
   }
