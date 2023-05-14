@@ -15,7 +15,7 @@ const T = (D = new Date()) => {
         ? "Viernes"
         : n == 6
         ? "Sábado"
-        : n == 7
+        : n == 0
         ? "Domingo"
         : "Err");
   }
@@ -80,7 +80,7 @@ var _h = _C({ element: "span", style: "c-hour", text: T().hour }),
 export function clock(id) {
   id.appendChild(_h);
   id.appendChild(_m);
-//   id.appendChild(_s);
+  //   id.appendChild(_s);
   id.appendChild(_d);
 
   setInterval(() => {
